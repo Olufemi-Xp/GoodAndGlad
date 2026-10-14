@@ -4,53 +4,51 @@
 
 ## Platform
 
-web
-
-## Stack
-
-Next.js App Router, TypeScript, custom CSS, and Vercel hosting. The owner accepted this recommendation for the inquiry-led first release.
+Web storefront built with the Next.js App Router, TypeScript, and project-owned CSS.
 
 ## Users
 
-Shoppers browsing on phones or desktop who want to explore luxury goods and ask Good & Glad about placing an order.
+Shoppers on phones and desktop who want to explore luxury items for themselves, women, and children, then ask Good & Glad about an order.
 
 ## Product Purpose
 
-Good & Glad presents luxury goods, including perfumes, bags, shoes, and useful portable accessories. Visitors browse the collections and place order inquiries through WhatsApp or email. Success means shoppers can understand the business, explore categories, and reach the business with little friction.
+Good & Glad presents perfumes, bags, shoes, women's hair accessories, beauty accessories, and children's luxury accessories. Visitors browse the collections and contact the business through WhatsApp or email to ask about current availability and prices.
 
 ## Positioning
 
-No unique market position or product claim has been supplied. Do not invent one.
+Brand name: `Good & Glad`. Slogan: `Premium luxury goods, glad customers.` No additional market position or product claim has been supplied.
 
 ## Operating Context
 
-Visitors explore a single-page storefront and contact the business directly to place orders. WhatsApp is the primary inquiry path; email is a secondary path.
+The storefront has separate Home and About pages. Visitors use collection inquiry links or a scripted front-end shopping assistant to prepare a WhatsApp message. The assistant cannot access live inventory, prices, or an AI provider; the business confirms details directly with customers.
 
 ## Capabilities and Constraints
 
-- Show Home, About, Collections, Services, Gallery, optional video, and Contact sections.
+- Home page with a local video hero, product collection display, gallery, and inquiry actions.
+- About page with business, product, and inquiry information.
 - WhatsApp number: `+2348062846548`.
 - Inquiry email: `teniolasusan@gmail.com`.
-- No online checkout, payment processing, accounts, database, AI recommendations, or contact form in the first release.
-- Business location, currency, catalogue, inventory, prices, service policies, delivery details, and history remain unconfirmed.
+- No checkout, payment processing, backend, API, database, accounts, CMS, or live inventory integration.
+- Business location, currency, catalogue, inventory, prices, delivery details, testimonials, and history remain unconfirmed.
 
 ## Brand Commitments
 
 - Business name: `Good & Glad`, spelled exactly this way.
-- The owner wants a custom, eye-catching, readable logo/wordmark.
-- The website should feel classic, clean, beautiful, welcoming, and polished.
+- Slogan: `Premium luxury goods, glad customers.`
+- Custom, eye-catching, readable logo/wordmark.
+- Warm, refined, clean, polished luxury visual direction.
 
 ## Evidence on Hand
 
-The confirmed name and contact details are the only supplied brand facts. No existing logo, product catalogue, owned product photography, video, address, prices, testimonials, or service promises were provided. Stock imagery must be presented as illustrative and never as proof of available inventory.
+Only the name, slogan, contact details, and broad product categories are confirmed. Local photos/video are licensed representative media, not evidence of current inventory. No address, product prices, testimonials, or service promises were supplied.
 
 ## Product Principles
 
-- Make the order inquiry path obvious.
-- Keep product and business claims grounded in information supplied by the owner.
-- Distinguish illustrative stock media from actual store inventory.
+- Make contact and inquiry paths obvious.
+- Do not claim current stock or pricing; invite customers to ask.
+- Distinguish representative stock imagery from actual store inventory.
 - Keep browsing clear and usable across phones and desktop.
 
 ## Accessibility & Inclusion
 
-Navigation and inquiry actions must be keyboard usable with visible focus. Maintain readable contrast and support reduced-motion preferences.
+Navigation, inquiry links, and assistant controls must be keyboard usable with visible focus. Maintain readable contrast and support reduced motion.

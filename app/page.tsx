@@ -1,7 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import CollectionGrid from "../components/CollectionGrid";
 import ContactSection from "../components/ContactSection";
 import Gallery from "../components/Gallery";
+import ShoppingAssistant from "../components/ShoppingAssistant";
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
 import VideoShowcase from "../components/VideoShowcase";
@@ -13,76 +15,67 @@ export default function Home() {
       <SiteHeader />
       <main>
         <section className="hero" id="home" aria-labelledby="hero-title">
+          <iframe
+            className="hero__video"
+            src="https://player.vimeo.com/video/1235733342?context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&h=945ceea5b2&s=deccef6bd961b1179ed2a0b5241602f0a6a6873c_1792063617&background=1"
+            title="Good & Glad luxury goods background video"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            aria-hidden="true"
+            tabIndex={-1}
+          />
+          <div className="hero__shade" />
           <div className="hero__copy">
-            <p className="eyebrow">The good things, thoughtfully found</p>
-            <h1 id="hero-title">Everyday,<br /><em>extraordinary.</em></h1>
-            <p className="hero__lede">A considered edit of beautiful things to wear, carry and keep close. Find a little something that feels like you.</p>
+            <p className="hero__brand">GOOD &amp; GLAD</p>
+            <h1 id="hero-title">Premium luxury goods,<br /><em>glad customers.</em></h1>
+            <p className="hero__lede">A considered selection of beautiful things for you and the people you love.</p>
             <div className="hero__actions">
-              <a className="button button--green" href="#collections">Explore the edit <span aria-hidden="true">↓</span></a>
-              <a className="text-link" href={whatsappLink()}>Make an enquiry <span aria-hidden="true">↗</span></a>
+              <a className="button button--light" href="#collections">Explore the collections <span aria-hidden="true">↓</span></a>
+              <a className="hero__text-link" href={whatsappLink()}>Ask us a question <span aria-hidden="true">↗</span></a>
             </div>
-            <div className="hero__seal" aria-hidden="true"><span>GOOD<br />THINGS<br />FOUND</span><i>✳</i></div>
           </div>
-          <div className="hero__art" aria-label="Good & Glad — a thoughtful find, a good feeling">
-            <div className="hero__image-frame">
-              <Image src="/media/supplied/perfume-display.jpg" alt="A warmly lit display of perfume bottles" fill priority sizes="(max-width: 680px) 90vw, (max-width: 900px) 50vw, 42vw" />
-            </div>
-            <span className="hero__image-note">A THOUGHTFUL EDIT</span>
-            <span className="hero__caption">GOOD THINGS, BEAUTIFULLY FOUND</span>
-            <span className="hero__spark hero__spark--one" aria-hidden="true">✳</span><span className="hero__spark hero__spark--two" aria-hidden="true">✧</span>
-          </div>
-          <a className="hero__scroll" href="#about"><span /> Scroll to explore</a>
+          <p className="hero__caption">A GOOD FIND. A GLAD FEELING.</p>
         </section>
 
-        <section className="intro-section section-wrap" id="about" aria-labelledby="about-title">
-          <div className="intro-section__marker"><span>01</span><span>OUR POINT OF VIEW</span></div>
-          <div className="intro-section__body">
-            <p className="eyebrow">A little more meaning in the everyday</p>
-            <h2 id="about-title">Luxury is how<br />it <em>makes you feel.</em></h2>
-            <div className="intro-section__details">
-              <p>At Good &amp; Glad, we believe the right detail can change the feeling of a whole day. A favourite scent. A bag that goes everywhere. Shoes you feel yourself in.</p>
-              <p>We bring together a thoughtful selection of perfumes, bags, shoes and useful little luxuries. Tell us what you’re looking for and we’ll help you find a good fit.</p>
-            </div>
+        <section className="welcome section-wrap" aria-labelledby="welcome-title">
+          <div className="welcome__label"><span>Good &amp; Glad</span><span>Thoughtfully found</span></div>
+          <div className="welcome__copy">
+            <h2 id="welcome-title">Little luxuries.<br /><em>Lovely feelings.</em></h2>
+            <p>Discover perfumes, bags, shoes and thoughtful accessories for women and children. Browse our edit, then message us to ask what is currently available and what it costs.</p>
+            <Link className="underlined-link" href="/about">A little about us <span aria-hidden="true">↗</span></Link>
           </div>
-          <div className="intro-section__stamp" aria-hidden="true"><span>GOOD</span><span className="stamp-star">✳</span><span>&amp; GLAD</span></div>
+          <div className="welcome__image">
+            <Image src="/media/craft-bag.jpg" alt="Representative detail of an embossed leather bag" fill sizes="(max-width: 760px) 90vw, 40vw" />
+          </div>
         </section>
 
         <section className="collections-section section-wrap" id="collections" aria-labelledby="collections-title">
           <div className="section-heading">
-            <div><p className="eyebrow">A few lovely things</p><h2 id="collections-title">The <em>edit.</em></h2></div>
-            <p>Explore a few of the things we love. Availability can change, so get in touch and ask us what’s here.</p>
+            <div><p className="eyebrow">Find your favourite</p><h2 id="collections-title">The collections</h2></div>
+            <p>From a favourite fragrance to the finishing detail, find something that feels like you. Ask us about current availability and pricing.</p>
           </div>
           <CollectionGrid />
         </section>
 
         <section className="service-band" id="services" aria-labelledby="service-title">
-          <div className="service-band__inner">
-            <span className="service-band__ornament" aria-hidden="true">✳</span>
-            <p className="eyebrow">Personal, from the first hello</p>
-            <h2 id="service-title">A lovely find<br /><em>starts with a conversation.</em></h2>
-            <p>Looking for a gift, a particular fragrance or something just for you? Tell us what you need. We’ll share what’s currently available and help you make your choice.</p>
-            <a className="text-link text-link--light" href={whatsappLink("Hello Good & Glad, I’m looking for a little help choosing something. Can you tell me what’s currently available?")}>Tell us what you’re looking for <span aria-hidden="true">↗</span></a>
-          </div>
+          <p className="eyebrow eyebrow--light">A personal touch</p>
+          <h2 id="service-title">Tell us what<br /><em>you have in mind.</em></h2>
+          <p>Looking for a gift, a particular style, or a little help choosing? Send us a note and we’ll be glad to help with your inquiry.</p>
+          <a className="button button--light" href={whatsappLink("Hello Good & Glad, I am looking for something special. Could you please help me explore what is currently available?")}>Share what you’re looking for <span aria-hidden="true">↗</span></a>
         </section>
 
         <section className="gallery-section section-wrap" id="gallery" aria-labelledby="gallery-title">
-          <div className="section-heading section-heading--gallery">
-            <div><p className="eyebrow">A little inspiration</p><h2 id="gallery-title">The feeling <em>of it.</em></h2></div>
-            <p>Beautiful things for everyday life and the moments worth celebrating.</p>
+          <div className="section-heading">
+            <div><p className="eyebrow">A little inspiration</p><h2 id="gallery-title">The feeling of it</h2></div>
+            <p>Representative imagery for inspiration. Please ask us about actual products and current availability.</p>
           </div>
-          <p className="stock-note">A look at the Good &amp; Glad picture collection</p>
           <Gallery />
         </section>
-
         <VideoShowcase />
-
-        <section className="promise-strip" aria-label="Good & Glad values">
-          <span>Thoughtfully chosen</span><i aria-hidden="true">✳</i><span>Made for your everyday</span><i aria-hidden="true">✳</i><span>Always glad to help</span>
-        </section>
-
         <ContactSection />
       </main>
       <SiteFooter />
+      <ShoppingAssistant />
     </>
   );
 }

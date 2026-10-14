@@ -1,6 +1,6 @@
 # Good & Glad
 
-An inquiry-led luxury storefront for Good & Glad, built with Next.js App Router, React, TypeScript, and custom CSS. It has no account, checkout, database, or environment variables; orders and questions are directed to WhatsApp or email.
+An inquiry-led luxury storefront for Good & Glad, built with Next.js App Router, React, TypeScript, and custom CSS. The site includes Home and About pages, six collections, a local video hero, and a guided front-end shopping assistant that prepares WhatsApp inquiries. It has no checkout, payment processing, backend assistant, database, or environment variables.
 
 ## Run locally
 
@@ -22,11 +22,12 @@ In Command Prompt or a shell where npm is enabled, the same scripts can be run a
 
 ## Update the storefront
 
-- Edit the four category descriptions and contact links in `content/site.ts`.
+- Edit the six collection descriptions, image paths, and contact links in `content/site.ts`.
 - Replace the files in `public/media/` with approved product photos and update `public/media/SOURCES.md` with each image/video source and license.
 - The gallery labels photos as representative because the current local assets are licensed stock imagery, not verified Good & Glad inventory. Replace them with the business's own approved product photos before advertising specific items.
 - Keep gallery paths unique so the same photo does not appear more than once.
-- The optional video section is driven by the `videos` list in `content/site.ts`; set it to an empty array to omit the section.
+- The hero video is `/media/perfume-stones.mp4`; the optional showcase section is driven by the `videos` list in `content/site.ts` and can be omitted by setting the list to an empty array.
+- `components/ShoppingAssistant.tsx` contains suggested inquiry prompts and the front-end-only note composer. It does not know live stock or prices; customers contact the business to confirm them.
 - The WhatsApp number and email are stored in `content/site.ts`; update them there if the business contact details change.
 
 ## Deploy

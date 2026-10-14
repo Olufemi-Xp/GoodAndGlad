@@ -8,12 +8,12 @@ import "@fontsource/dm-sans/600.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Good & Glad — Everyday, extraordinary",
-  description: "A thoughtful edit of perfumes, bags, shoes and beautiful little luxuries. Find something lovely with Good & Glad.",
+  title: "Good & Glad | Premium luxury goods, glad customers",
+  description: "Discover perfumes, bags, shoes, women's hair accessories, beauty accessories, and children's luxury accessories with Good & Glad.",
   applicationName: "Good & Glad",
   openGraph: {
-    title: "Good & Glad — Everyday, extraordinary",
-    description: "A thoughtful edit of beautiful things to wear, carry and keep close.",
+    title: "Good & Glad | Premium luxury goods, glad customers",
+    description: "A thoughtful selection of perfumes, bags, shoes, and accessories for women and children.",
     type: "website",
   },
 };

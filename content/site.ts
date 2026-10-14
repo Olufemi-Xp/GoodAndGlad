@@ -4,24 +4,54 @@ export const contact = {
   email: "teniolasusan@gmail.com",
 };
 
-export function whatsappLink(message = "Hello Good & Glad, I’d love to make an inquiry.") {
+export function whatsappLink(message = "Hello Good & Glad, I would love to make an inquiry.") {
   return `https://wa.me/${contact.phoneForLink}?text=${encodeURIComponent(message)}`;
 }
 
 export const collections = [
-  { number: "01", name: "Fragrance", note: "A little ritual, a lasting impression.", tone: "fragrance" },
-  { number: "02", name: "Bags", note: "Considered companions for every day.", tone: "bags" },
-  { number: "03", name: "Shoes", note: "The finishing touch to your own kind of style.", tone: "shoes" },
-  { number: "04", name: "Accessories", note: "Small details that make a day feel special.", tone: "accessories" },
+  {
+    name: "Perfumes",
+    note: "Find a fragrance for your own kind of everyday ritual.",
+    image: "/media/perfume-editorial.jpg",
+    alt: "Representative fragrance styling on sculptural stone",
+  },
+  {
+    name: "Bags",
+    note: "Considered companions for work, weekends and everything between.",
+    image: "/media/leather-bag-editorial.jpg",
+    alt: "Representative leather handbag styling",
+  },
+  {
+    name: "Shoes",
+    note: "Finishing touches for the occasions that make you feel your best.",
+    image: "/media/gold-heels.jpg",
+    alt: "Representative gold evening shoe styling",
+  },
+  {
+    name: "Women's hair accessories",
+    note: "Beautiful finishing details for every kind of look.",
+    image: "/media/supplied/jewelry-set.jpg",
+    alt: "Representative decorative accessories styling",
+  },
+  {
+    name: "Beauty accessories",
+    note: "Little luxuries to bring into your daily routine.",
+    image: "/media/sunglasses.jpg",
+    alt: "Representative beauty and personal accessory styling",
+  },
+  {
+    name: "Children's beauty & luxury accessories",
+    note: "Special finds for the little ones in your life.",
+    image: "/media/supplied/rose-bouquet.jpg",
+    alt: "Representative gift styling for a special occasion",
+  },
 ];
 
 export const gallery = [
-  { src: "/media/supplied/jewelry-set.jpg", alt: "A gold-tone jewelry set with black and clear stones", caption: "The finishing detail" },
-  { src: "/media/supplied/designer-bags.jpg", alt: "A selection of designer handbags displayed on shelves", caption: "A bag for your edit" },
-  { src: "/media/supplied/watch-set.jpg", alt: "A gold and silver-tone watch with a matching bracelet", caption: "A timeless accent" },
-  { src: "/media/supplied/perfume-bottle.jpg", alt: "A rose-colored designer perfume bottle", caption: "A favourite fragrance" },
-  { src: "/media/supplied/rose-bouquet.jpg", alt: "A generous bouquet of red roses wrapped in white paper", caption: "A thoughtful gift" },
-  { src: "/media/supplied/coach-bags.jpg", alt: "Leather handbags displayed in their presentation boxes", caption: "Everyday companions" },
+  { src: "/media/perfume-editorial.jpg", alt: "Perfume bottle arranged on sculptural stones", caption: "A signature scent" },
+  { src: "/media/leather-bag-editorial.jpg", alt: "Close detail of a leather handbag", caption: "Everyday elegance" },
+  { src: "/media/gold-heels.jpg", alt: "Detail of a gold evening shoe", caption: "A finishing touch" },
+  { src: "/media/sunglasses.jpg", alt: "Dark framed sunglasses on a light surface", caption: "A considered detail" },
 ];
 
 export const videos = [
